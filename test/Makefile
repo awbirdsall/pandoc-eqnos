@@ -5,11 +5,11 @@ v1.17 = 1.17.2
 v1.16 = 1.16.0.2
 v1.15 = 1.15.2
 
-PANDOC-1.19 = pandoc-$(v1.19)
-PANDOC-1.18 = pandoc-$(v1.18)
-PANDOC-1.17 = pandoc-$(v1.17)
-PANDOC-1.16 = pandoc-$(v1.16)
-PANDOC-1.15 = pandoc-$(v1.15)
+PANDOC-1.19 = pandoc#-$(v1.19)
+# PANDOC-1.18 = pandoc-$(v1.18)
+# PANDOC-1.17 = pandoc-$(v1.17)
+# PANDOC-1.16 = pandoc-$(v1.16)
+# PANDOC-1.15 = pandoc-$(v1.15)
 
 PYTHON-2.7 = python2.7
 PYTHON-3.4 = python3.4
@@ -22,14 +22,14 @@ HTMLFLAGS = --standalone --mathml --variable urlcolor=blue
 
 all: pdf html docx
 
-pdf: out/test-1.19.pdf \
-     out/test-1.19-py2.7.pdf \
-     out/test-1.19-py3.4.pdf \
-     out/test-1.19-cleveref.pdf \
-     out/test-1.18.pdf \
-     out/test-1.17.pdf \
-     out/test-1.16.pdf \
-     out/test-1.15.pdf
+pdf: out/test-1.19.pdf
+     # out/test-1.19-py2.7.pdf \
+     # out/test-1.19-py3.4.pdf \
+     # out/test-1.19-cleveref.pdf \
+     # out/test-1.18.pdf \
+     # out/test-1.17.pdf \
+     # out/test-1.16.pdf \
+     # out/test-1.15.pdf
 
 html: out/test-1.19.html
 
